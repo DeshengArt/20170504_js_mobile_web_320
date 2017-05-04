@@ -1,0 +1,812 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body,head {
+ margin-top: 0px;
+ margin-right: auto;
+ margin-left: auto;
+ margin-bottom: 0px;
+ padding: 0 0;
+background:#f1f1f1;
+}
+
+.outline_1100px{
+	max-width:1100px;
+	height:auto;
+	min-width:320px;
+	width:100%;
+	margin:0 auto;
+}
+
+/*Outside 开始*/
+.outside{
+	width:100%;
+	height:auto;
+	float:left;
+	background:#f1f1f1;
+}
+
+.outside_bg{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	
+}
+
+/*Outside 结束*/
+
+
+/*NavBar 开始*/
+.navbar_bg{
+	width:100%;
+	height:auto;
+	background:white;
+	float:left;
+	box-shadow:0px 3px 5px #5a5a5a;
+	position:fixed;
+	top:0px;
+	z-index:23;
+}
+
+.js_sub_logo{
+	display:none;
+}
+.js_logo{
+	width:70%;
+	height:auto;
+	float:left;
+	max-width: 276px;
+	margin-top:4%;
+}
+
+.menu_btn{
+	position:fixed;
+	float:right;
+	right:7%;
+	z-index: 5;
+	top:3%;
+}
+
+
+/*NavBar 结束*/
+
+
+
+/*Banner 开始*/
+.Banner_out{
+	width:100%;
+	max-width:480px; 
+	height:auto;
+	float:left;
+	margin-top:25%;
+}
+.Banner_btn{
+	width:100%;
+	max-width:23px;
+	height:auto;
+	margin-top:70%;
+}
+
+
+
+/*Banner 结束*/
+
+
+/*上征指数 开始*/
+.stock_sign_number_bg_first{
+	width:95%;
+	height:100%;
+	max-height:92px;
+	float:left;
+	background:white;
+	box-shadow:0 0 5px #b3b2b2;
+	margin-top: -2%;
+	padding: 3% 0;
+	position:relative;
+	z-index: 20;
+}
+.stock_sign_number_bg_second{
+	width:95%;
+	height:100%;
+	max-height:92px;
+	padding: 3% 0;
+	float:right;
+	margin-bottom:1.9%;
+	background:white;
+	box-shadow:0 0 5px #b3b2b2;
+	position:relative;
+	z-index:20;
+}
+
+.stock_sign_trapezoid{
+	width: 83%;
+    height: 10px;
+    background-position: center center;
+    display: inline-block;
+    background: #d0d0d0;
+    transform: skew(-70deg);
+    margin-left: 8%;
+    float: left;
+}
+
+.stock_sign_number_tittle{
+	width: 25%;
+    height: 92px;
+    float: left;
+    font: bold 11pt 微软雅黑;
+    color: #0056a6;
+    letter-spacing: 1px;
+}
+
+.stock_sign_number_detail_out{
+	width: 10%;
+    height: 92px;
+    float: left;
+}
+
+.stock_sign_number_detail{
+	width:auto;
+	height:auto;
+	float:left;
+	margin-top:12px;
+	margin-bottom:5px;
+	font:10pt 微软雅黑;
+	color:#0078fc;
+	letter-spacing:2px;
+}
+
+.stock_sign_number_count_square{
+	width: auto;
+    height: auto;
+    border: 1pt solid #e6e6e6;
+    float: left;
+    margin: 0 auto;
+    margin-left: 3px;
+}
+
+.stock_sign_number_count{
+	width: auto;
+    height: auto;
+    float: left;
+    font: 10pt 微软雅黑;
+    letter-spacing: 2px;
+    margin: 0 auto;
+}
+/*上征指数 结束*/
+
+
+/*开户 开始*/
+.signup_btn_out{
+	width:100%;
+	height:64px;
+	float:left;
+	margin-top:2%;
+	margin-bottom:4%;
+	
+}
+
+
+.signup_btn_bg_real{
+	width: 45%;
+    height: auto;
+    float: left;
+    background: #218ce5;
+    border-radius: 10px;
+    border: 1pt solid #218ce5;
+    margin-left: 3%;
+	
+}
+
+.signup_btn_bg_faked{
+	width: 45%;
+    height: auto;
+    float: left;
+    background: #0560c4;
+    border-radius: 10px;
+    border: 1pt solid #218ce5;
+    margin-left: 3%;
+}
+
+.signup_btn_word{
+	letter-spacing: 5px;
+    font: 15px 微软雅黑;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+}
+/*开户结束*/
+
+/*分隔线 开始*/
+.separated_line{
+	width:92%;
+	height:3px;
+	float:left;
+	margin-left:4%;
+	background: url(../images/separated_line.png) repeat-x;
+	margin-bottom:2%;
+}
+
+/*分隔线 结束*/
+
+
+/*头条公告 开始*/
+.announced_tittle_choose{
+	width:23%;
+    height: auto;
+    color: #0056a6;
+    float: left;
+    font: bold 13px 微软雅黑;
+    cursor: pointer;
+	margin-left:6%;
+}
+
+
+.announced_tittle{
+	width: 23%;
+    height: auto;
+    color: #6ea9f3;
+    float: left;
+    font: bold 13px 微软雅黑;
+    cursor: pointer;
+}
+
+.announced_detail_bg{
+	width:94%;
+	max-width:1100px;
+	height:auto;
+	float:left;
+	background:#f7fbff;
+	box-shadow:0px 5px 0px #d8d8d8;
+	border-radius:10px;
+	margin-top:1%;
+	margin-left:3%;
+	border:1pt solid #dadde0;
+}
+
+.announced_detail_out{
+	width: 100%;
+    height: auto;
+    margin-top: 3%;
+    display: inline-block;
+}
+
+.announced_detail_word{
+	width: 90%;
+    height: auto;
+    margin: 2% auto;
+    font: 10pt 微软雅黑;
+    letter-spacing: 1px;
+    color: #0068b5;
+}
+
+.announced_detail_word_line{
+    width: 83%;
+    height: 3px;
+    background: #ecf0f3;
+    margin: 2% auto;
+}
+
+.announced_detail_more_btn{
+	width: 25%;
+    height: auto;
+    margin: 1% auto;
+    background: #3d97fd;
+    border-radius: 4px;
+    color: white;
+    font: bold 15px 微软雅黑;
+    letter-spacing: 5px;
+    padding-left: 10px;
+    line-height: 30px;
+}
+
+
+
+/*头条公告 结束*/
+
+/*嘉盛优势 开始*/
+.advantage_bg{
+	width:100%;
+	height:auto;
+	float:left;
+	margin-top:5%;
+	margin-bottom:4%;
+	background:white;
+	box-shadow:0px -3px 0px #e5e5e5,0px 3px 0px #e5e5e5;
+}
+
+.advantage_detail_out{
+	width: 50%;
+    max-width: 269px;
+    height: auto;
+    float: left;
+    margin-top: 7%;
+	
+}
+
+.advantage_icon_bg{
+	width: 40%;
+    height: 065px;
+    float: left;
+    border-radius: 100px;
+    border: 1pt solid #0078fc;
+    background: white;
+	
+}
+
+.advantage_word{
+	margin-left: 5%;
+    margin-top: 10%;
+    font: 13pt 微软雅黑;
+    letter-spacing: 2px;
+    color: #e08841;
+    text-align: center;
+}
+
+/*嘉盛优势 结束*/
+
+/*浮动按钮 开始*/
+.fix_bar_bg{
+	width:100%;
+	height:60px;
+	float:left;
+	position: fixed;
+	bottom:0;
+	background:#333333;
+	box-shadow:0 -3px 0 black;
+	z-index:10;
+}
+.fix_bar_area{
+	width:33%;
+	height:60px;
+	float:left;
+}
+.fix_bar_word{
+	width:auto;
+	height:auto;
+	float:left;
+	margin-left:20px;
+	margin-top:15px;
+	font:13pt 微软雅黑;
+	color:white;
+	letter-spacing:5px;
+}
+.fix_bar_line{
+	width:0.5%;
+	height:100%;
+	float:left;
+	background:#848586;
+	
+}
+.slide_bar_word{
+	width: 100%;
+    height: auto;
+    float: left;
+    font: 15pt 微软雅黑;
+    letter-spacing: 2px;
+    color: #e0f2ff;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+/*浮动按钮 结束*/
+
+
+
+
+
+/*480px以上*/
+@media screen and (min-width: 480px){
+	@charset "utf-8";
+/* CSS Document */
+
+html,body {
+ margin-top: 0px;
+ margin-right: auto;
+ margin-left: auto;
+ margin-bottom: 0px;
+ padding: 0 0;
+background:#f1f1f1;
+}
+
+.outline_1100px{
+	max-width:1100px;
+	height:auto;
+	min-width:320px;
+	width:99%;
+	margin:0 auto;
+}
+
+/*Outside 开始*/
+.outside{
+	width:100%;
+	height:auto;
+	float:left;
+	background:#f1f1f1;
+}
+
+.outside_bg{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	
+}
+
+/*Outside 结束*/
+
+
+/*NavBar 开始*/
+.navbar_bg{
+	width:100%;
+	height:80px;
+	background:white;
+	float:left;
+	box-shadow:0px 3px 5px #5a5a5a;
+}
+
+.js_logo{
+	width:25%;
+	height:70%;
+	float:left;
+	margin-top:0.9%;
+	margin-left:10%;
+	background:url(../images/js_logo.png) no-repeat;
+}
+
+.js_sub_logo{
+	width:186px;
+	height:37px;
+	float:left;
+	margin-left:2%;
+	margin-top:3%;
+	background:url(../images/js_sub_logo.png) no-repeat;
+}
+
+.menu_btn{
+	width:41px;
+	height:27px;
+	float:left;
+	margin-left:56px;
+	margin-top:28px;
+	background:url(../images/menu_btn.png) no-repeat;
+}
+/*NavBar 结束*/
+
+
+
+/*Banner 开始*/
+.Banner_out{
+	width:100%;
+	height:216px;
+	float:left;
+}
+
+/*Banner 结束*/
+
+
+/*上征指数 开始*/
+.stock_sign_number_bg{
+	width:100%;
+	height:auto;
+	background-position:center center;
+	float:left;
+	margin-top:12%;
+	background:url(../images/stock_sign_number.png) no-repeat;
+}
+.stock_sign_trapezoid{
+	width: 88%;
+    height: 10px;
+	background-position:center center;
+ 	display: inline-block;
+  	background:#d0d0d0;
+  	transform: skew(-70deg);
+	margin-left:6%;
+	float:left;
+}
+
+.stock_sign_number_tittle{
+	width:auto;
+	height:92px;
+	float: left;
+	font:bold 19pt 微软雅黑;
+	color:#0056a6;
+	letter-spacing:1px;
+}
+
+.stock_sign_number_detail_out{
+	width:10%;
+	height:92px;
+	float:left;
+	margin-left:2%;
+}
+
+.stock_sign_number_detail{
+	width:auto;
+	height:auto;
+	float:left;
+	margin-top:12px;
+	margin-bottom:5px;
+	font:15pt 微软雅黑;
+	color:#0078fc;
+	letter-spacing:2px;
+}
+
+.stock_sign_number_count_square{
+	width:79px;
+	height:26px;
+	border:1pt solid #e6e6e6;
+	float: left;
+	margin:0 auto;
+	margin-left:3px;
+}
+
+.stock_sign_number_count{
+	width:auto;
+	height:auto;
+	float:left;
+	font:13pt 微软雅黑;
+	letter-spacing:2px;
+	margin-top:2px;
+	margin-left:7px;
+}
+/*上征指数 结束*/
+
+
+/*开户 开始*/
+.signup_btn_bg_real{
+	width:45%;
+	height:64px;
+	max-height:495px;
+	float:left;
+	margin-left:3%;
+	background:#218ce5;
+	border-radius:10px;
+	border:1pt solid #218ce5;
+	margin-top:1.4%;
+	margin-bottom:1.5%;
+}
+
+.signup_btn_bg_faked{
+	width:45%;
+	max-height:495px;
+	height:64px;
+	float:right;
+	margin-right:3%;
+	background:#0560c4;
+	border-radius:10px;
+	border: 1pt solid #0560c4;
+	margin-top:1.4%;
+	margin-bottom:1.5%;
+}
+
+.signup_btn_word{
+	width:100%;
+	max-width:210px;
+	height:auto;
+	float:left;
+	letter-spacing:5px;
+	font:30px 微软雅黑;
+	color:white;
+	margin:2% 30%;
+}
+/*开户结束*/
+
+/*分隔线 开始*/
+.separated_line{
+	width:92%;
+	height:3px;
+	float:left;
+	margin-left:4%;
+	background: url(../images/separated_line.png) repeat-x;
+	margin-bottom:2%;
+}
+
+/*分隔线 结束*/
+
+
+/*头条公告 开始*/
+.announced_tittle_choose{
+	width:auto;
+	height:auto;
+	color:#0056a6;
+	float:left;
+	font: bold 24px 微软雅黑;
+	cursor:pointer;
+}
+
+
+.announced_tittle{
+	width:auto;
+	height:auto;
+	color:#6ea9f3;
+	float:left;
+	font: bold 24px 微软雅黑;
+	margin-left:15%;
+	cursor:pointer;
+}
+
+.annoinced_detail_bg{
+	width:94%;
+	height:261px;
+	float:left;
+	background:#f7fbff;
+	box-shadow:0px 5px 0px #d8d8d8;
+	border-radius:10px;
+	margin-top:2%;
+	margin-left:3%;
+	border:1pt solid #dadde0;
+}
+
+.announced_detail_out{
+	width:100%;
+	height:auto;
+	float:left;
+	margin-top:3%;
+}
+
+.announced_detail_word{
+	width:auto;
+	height:auto;
+	float:left;
+	margin-bottom:0.8%;
+	margin-left:11%;
+	font:18pt 微软雅黑;
+	letter-spacing:3px;
+	color:#0068b5;
+}
+
+.announced_detail_word_line{
+	width:83%;
+	height:3px;
+	float:left;
+	background:#ecf0f3;
+	margin-left:8%;
+}
+
+.announced_detail_more_btn{
+	width:11%;
+	height:38px;
+	float:left;
+	margin-left:45%;
+	margin-top:1%;
+	background:#3d97fd;
+	border-radius: 4px;
+	color:white;
+	font:bold 24px 微软雅黑;
+	letter-spacing:5px;
+	padding-left:20px;
+	padding-top:3px;
+	position: relative;
+	
+}
+
+.announced_tittle_tri_01{
+	width:28px;
+	height:15px;
+	float:left;
+	background:url(../images/announced_detail_bg_tri.png) no-repeat;
+	margin-top:-1.4%;
+	margin-left:11%;
+}
+
+.announced_tittle_tri_02{
+	width:28px;
+	height:15px;
+	float:left;
+	background:url(../images/announced_detail_bg_tri.png) no-repeat;
+	margin-top:-1.4%;
+	margin-left:38%;
+	position:relative;
+}
+
+.announced_tittle_tri_03{
+	width:28px;
+	height:15px;
+	float:left;
+	background:url(../images/announced_detail_bg_tri.png) no-repeat;
+	margin-top:-1.4%;
+	margin-left:64.5%;
+	position:relative;
+}
+
+.announced_tittle_tri_04{
+	width:28px;
+	height:15px;
+	float:left;
+	background:url(../images/announced_detail_bg_tri.png) no-repeat;
+	margin-top:-1.4%;
+	margin-left:92%;
+}
+
+
+
+/*头条公告 结束*/
+
+/*嘉盛优势 开始*/
+.advantage_bg{
+	width:100%;
+	height:429px;
+	float:left;
+	margin-top:5%;
+	margin-bottom:4%;
+	background:white;
+	box-shadow:0px -3px 0px #e5e5e5,0px 3px 0px #e5e5e5;
+}
+
+.advantage_detail_out{
+	width:269px;
+	height:100px;
+	float:left;
+	margin-top:7%;
+	margin-left:4%;
+	
+}
+
+.advantage_icon_bg{
+	width:100%;
+	max-width:100px;
+	height:100px;
+	float:left;
+	border-radius:100px;
+	border:1pt solid #0078fc;
+	background:white;
+}
+
+.advantage_word{
+	width:auto;
+	height:auto;
+	float:left;
+	margin-left:5%;
+	margin-top:10%;
+	font:20pt 微软雅黑;
+	letter-spacing: 2px;
+	color:#e08841;
+	text-align:center;
+}
+
+/*嘉盛优势 结束*/
+
+/*浮动按钮 开始*/
+.fix_bar_bg{
+	width:100%;
+	height:60px;
+	float:left;
+	position: fixed;
+	bottom:0;
+	background:#333333;
+	box-shadow:0 -3px 0 black;
+	z-index:10;
+}
+.fix_bar_area{
+	width:33%;
+	height:60px;
+	float:left;
+}
+.fix_bar_word{
+	width:auto;
+	height:auto;
+	float:left;
+	margin-left:20px;
+	margin-top:15px;
+	font:13pt 微软雅黑;
+	color:white;
+	letter-spacing:5px;
+}
+.fix_bar_line{
+	width:0.5%;
+	height:100%;
+	float:left;
+	background:#848586;
+	
+}
+.slide_bar_word{
+	width:100%;
+	height:auto;
+	float:left;
+	font:26pt  微软雅黑;
+	letter-spacing:2px;
+	color:#e0f2ff;
+	margin-left:100px;
+	margin-bottom:25px;
+}
+/*浮动按钮 结束*/
+	
+}
