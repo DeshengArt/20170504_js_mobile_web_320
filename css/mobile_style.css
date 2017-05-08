@@ -184,7 +184,7 @@ background:#f1f1f1;
 	height:64px;
 	float:left;
 	margin-top:2%;
-	margin-bottom:4%;
+	margin-bottom:10px;
 	
 }
 
@@ -312,7 +312,7 @@ background:#f1f1f1;
 	height:auto;
 	float:left;
 	margin-top:5%;
-	margin-bottom:4%;
+	margin-bottom:20px;
 	background:white;
 	box-shadow:0px -3px 0px #e5e5e5,0px 3px 0px #e5e5e5;
 }
@@ -387,7 +387,7 @@ background:#f1f1f1;
     font: 15pt 微软雅黑;
     letter-spacing: 2px;
     color: #e0f2ff;
-    margin-left: 100px;
-    margin-bottom: 20px;
+    margin-left: 35%;
+    margin-bottom: 15px;
 }
 /*浮动按钮 结束*/
