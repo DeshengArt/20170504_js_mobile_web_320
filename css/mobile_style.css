@@ -125,6 +125,8 @@ background:#f1f1f1;
     background-position: center center;
     display: inline-block;
     background: #d0d0d0;
+	-ms-transform: skew(-70deg); /* IE 9 */
+    -webkit-transform: skew(-70deg); /* Chrome, Safari, Opera */
     transform: skew(-70deg);
     margin-left: 8%;
     float: left;
