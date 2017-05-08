@@ -78,7 +78,7 @@ background:#f1f1f1;
 	width:100%;
 	max-width:480px; 
 	height:auto;
-	float:left;
+	margin:0 auto;
 	margin-top:80px;
 }
 .Banner_btn{
