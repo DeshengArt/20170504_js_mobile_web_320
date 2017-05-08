@@ -52,11 +52,12 @@ background:#f1f1f1;
 	display:none;
 }
 .js_logo{
-	width:70%;
+	width:50%;
 	height:auto;
 	float:left;
 	max-width: 276px;
-	margin-top:4%;
+	margin-top:20px;
+	margin-left:10px
 }
 
 .menu_btn{
@@ -78,7 +79,7 @@ background:#f1f1f1;
 	max-width:480px; 
 	height:auto;
 	float:left;
-	margin-top:25%;
+	margin-top:80px;
 }
 .Banner_btn{
 	width:100%;
