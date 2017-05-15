@@ -1,0 +1,903 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2.0" />
+<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+<title>嘉盛投资</title>
+
+<!--css 开始-->
+<link href="css/mobile_style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/style.css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<!--css 结束-->
+
+<!--JQ 开始-->
+<script src="js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+	
+/*今日头条JQ 开始*/
+$(document).ready(function(){
+  $("#jrtt_btn").click(function(){
+  $("#jrtt_detail_page01").show();
+  $("#jrtt_detail_page02").hide();
+	  
+	  $("#jrtt_btn").css("color","#0056a6");
+	  $("#dpfx_btn").css("color","#6ea9f3");
+	  $("#gpzx_btn").css("color","#6ea9f3");
+	  $("#jsgd_btn").css("color","#6ea9f3");
+	  
+	  $("#dpfx_detail_page01").hide();
+	  $("#gpzx_detail_page01").hide();
+	  $("#jsgd_detail_page01").hide();
+  });
+});
+$(document).ready(function(){
+  $("#dpfx_btn").click(function(){
+  $("#dpfx_detail_page01").show();
+  $("#dpfx_detail_page02").hide();
+	  
+	  $("#jrtt_btn").css("color","#6ea9f3");
+	  $("#dpfx_btn").css("color","#0056a6");
+	  $("#gpzx_btn").css("color","#6ea9f3");
+	  $("#jsgd_btn").css("color","#6ea9f3");
+	  
+	  $("#jrtt_detail_page01").hide();
+	  $("#gpzx_detail_page01").hide();
+	  $("#jsgd_detail_page01").hide();
+  });
+});
+$(document).ready(function(){
+  $("#gpzx_btn").click(function(){
+  $("#gpzx_detail_page01").show();
+  $("#gpzx_detail_page02").hide();
+	    
+	  $("#jrtt_btn").css("color","#6ea9f3");
+	  $("#dpfx_btn").css("color","#6ea9f3");
+	  $("#gpzx_btn").css("color","#0056a6");
+	  $("#jsgd_btn").css("color","#6ea9f3");
+	  
+	  $("#dpfx_detail_page01").hide();
+	  $("#jrtt_detail_page01").hide();
+	  $("#jsgd_detail_page01").hide();
+
+  });
+});
+$(document).ready(function(){
+  $("#jsgd_btn").click(function(){
+  $("#jsgd_detail_page01").show();
+  $("#jsgd_detail_page02").hide();
+	    
+	  $("#jrtt_btn").css("color","#6ea9f3");
+	  $("#dpfx_btn").css("color","#6ea9f3");
+	  $("#gpzx_btn").css("color","#6ea9f3");
+	  $("#jsgd_btn").css("color","#0056a6");
+	  
+	  $("#dpfx_detail_page01").hide();
+	  $("#gpzx_detail_page01").hide();
+	  $("#jrtt_detail_page01").hide();
+  });
+});
+	
+/*JRTT页码 开始*/	
+	
+	$(document).ready(function(){
+  $("#jrtt_page01_icon_page01").click(function(){
+  $("#jrtt_detail_page01").show();
+  $("#jrtt_detail_page02").hide();
+  $("#jrtt_page01_icon_page01").css("background","#a9a9a9");
+  $("#jrtt_page01_icon_page02").css("background","#ebebeb");
+  });
+});
+	
+	$(document).ready(function(){
+  $("#jrtt_page01_icon_page02").click(function(){
+  $("#jrtt_detail_page02").show();
+  $("#jrtt_detail_page01").hide();
+  $("#jrtt_page01_icon_page02").css("background","#a9a9a9");
+  $("#jrtt_page01_icon_page01").css("background","#ebebeb");
+  });
+});
+	$(document).ready(function(){
+  $("#jrtt_page02_icon_page01").click(function(){
+  $("#jrtt_detail_page01").show();
+  $("#jrtt_detail_page02").hide();
+  $("#jrtt_page01_icon_page01").css("background","#a9a9a9");
+  $("#jrtt_page01_icon_page02").css("background","#ebebeb");
+  });
+});
+	
+/*JRTT页码 结束*/
+	
+/*dpfx页码 开始*/	
+	
+	$(document).ready(function(){
+  $("#dpfx_page01_icon_page01").click(function(){
+  $("#dpfx_detail_page01").show();
+  $("#dpfx_detail_page02").hide();
+  $("#dpfx_page01_icon_page01").css("background","#a9a9a9");
+  $("#dpfx_page01_icon_page02").css("background","#ebebeb");
+  });
+});
+	
+	$(document).ready(function(){
+  $("#dpfx_page01_icon_page02").click(function(){
+  $("#dpfx_detail_page02").show();
+  $("#dpfx_detail_page01").hide();
+  $("#dpfx_page01_icon_page02").css("background","#a9a9a9");
+  $("#dpfx_page01_icon_page01").css("background","#ebebeb");
+  });
+});
+	$(document).ready(function(){
+  $("#dpfx_page02_icon_page01").click(function(){
+  $("#dpfx_detail_page01").show();
+  $("#dpfx_detail_page02").hide();
+  $("#dpfx_page01_icon_page01").css("background","#a9a9a9");
+  $("#dpfx_page01_icon_page02").css("background","#ebebeb");
+  });
+});
+	
+/*dpfx页码 结束*/
+
+
+/*gpzx页码 开始*/	
+	
+	$(document).ready(function(){
+  $("#gpzx_page01_icon_page01").click(function(){
+  $("#gpzx_detail_page01").show();
+  $("#gpzx_detail_page02").hide();
+  $("#gpzx_page01_icon_page01").css("background","#a9a9a9");
+  $("#gpzx_page01_icon_page02").css("background","#ebebeb");
+  });
+});
+	
+	$(document).ready(function(){
+  $("#gpzx_page01_icon_page02").click(function(){
+  $("#gpzx_detail_page02").show();
+  $("#gpzx_detail_page01").hide();
+  $("#gpzx_page01_icon_page02").css("background","#a9a9a9");
+  $("#gpzx_page01_icon_page01").css("background","#ebebeb");
+  });
+});
+	$(document).ready(function(){
+  $("#gpzx_page02_icon_page01").click(function(){
+  $("#gpzx_detail_page01").show();
+  $("#gpzx_detail_page02").hide();
+  $("#gpzx_page01_icon_page01").css("background","#a9a9a9");
+  $("#gpzx_page01_icon_page02").css("background","#ebebeb");
+  });
+});
+	
+/*gpzx页码 结束*/
+
+	
+/*今日头条JQ 结束*/
+	
+
+/*公司公告JQ 开始*/
+$(document).ready(function(){
+  $("#zxgg_btn").click(function(){
+  $("#zxgg_detail_page01").show();
+	  
+	  $("#zxgg_btn").css("color","#0056a6");
+	  $("#zxhd_btn").css("color","#6ea9f3");
+	  $("#jsbd_btn").css("color","#6ea9f3");
+	  $("#tzxt_btn").css("color","#6ea9f3");
+	  
+	  $("#zxhd_detail_page01").hide();
+	  $("#jsbd_detail_page01").hide();
+	  $("#tzxt_detail_page01").hide();
+	  
+  });
+});
+$(document).ready(function(){
+  $("#zxhd_btn").click(function(){
+  $("#zxhd_detail_page01").show();
+	  
+	  $("#zxgg_btn").css("color","#6ea9f3");
+	  $("#zxhd_btn").css("color","#0056a6");
+	  $("#jsbd_btn").css("color","#6ea9f3");
+	  $("#tzxt_btn").css("color","#6ea9f3");
+	  
+	  $("#zxgg_detail_page01").hide();
+	  $("#jsbd_detail_page01").hide();
+	  $("#tzxt_detail_page01").hide();
+  });
+});
+	$(document).ready(function(){
+  $("#jsbd_btn").click(function(){
+  $("#jsbd_detail_page01").show();
+	  
+	  $("#zxgg_btn").css("color","#6ea9f3");
+	  $("#zxhd_btn").css("color","#6ea9f3");
+	  $("#jsbd_btn").css("color","#0056a6");
+	  $("#tzxt_btn").css("color","#6ea9f3");
+	  
+	  $("#zxgg_detail_page01").hide();
+	  $("#zxhd_detail_page01").hide();
+	  $("#tzxt_detail_page01").hide();
+  });
+});
+	$(document).ready(function(){
+  $("#tzxt_btn").click(function(){
+  $("#tzxt_detail_page01").show();
+	  
+	  $("#zxgg_btn").css("color","#6ea9f3");
+	  $("#zxhd_btn").css("color","#6ea9f3");
+	  $("#jsbd_btn").css("color","#6ea9f3");
+	  $("#tzxt_btn").css("color","#0056a6");
+	  
+	  $("#zxhd_detail_page01").hide();
+	  $("#jsbd_detail_page01").hide();
+	  $("#zxgg_detail_page01").hide();
+  });
+});
+	
+/*zxgg页码 开始*/	
+	
+	$(document).ready(function(){
+  $("#zxgg_page01_icon_page01").click(function(){
+  $("#zxgg_detail_page01").show();
+  $("#zxgg_detail_page02").hide();
+  $("#zxgg_page01_icon_page01").css("background","#a9a9a9");
+  $("#zxgg_page01_icon_page02").css("background","#ebebeb");
+  });
+});
+	
+	$(document).ready(function(){
+  $("#zxgg_page01_icon_page02").click(function(){
+  $("#zxgg_detail_page02").show();
+  $("#zxgg_detail_page01").hide();
+  $("#zxgg_page01_icon_page02").css("background","#a9a9a9");
+  $("#zxgg_page01_icon_page01").css("background","#ebebeb");
+  });
+});
+	$(document).ready(function(){
+  $("#zxgg_page02_icon_page01").click(function(){
+  $("#zxgg_detail_page01").show();
+  $("#zxgg_detail_page02").hide();
+  $("#zxgg_page01_icon_page01").css("background","#a9a9a9");
+  $("#zxgg_page01_icon_page02").css("background","#ebebeb");
+  });
+});
+	
+/*zxgg页码 结束*/	
+	
+	
+/*公司公告JQ 结束*/
+	
+$(document).ready(function(){
+  $("#slide_btn").click(function(){
+  $("#slide_block").slideToggle();
+  });
+});
+</script>
+
+<!--MenuJQ 开始-->
+<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+		  var trigger = $('.hamburger'),
+		      overlay = $('.overlay'),
+		     isClosed = false;
+
+		    trigger.click(function () {
+		      hamburger_cross();      
+		    });
+
+		    function hamburger_cross() {
+
+		      if (isClosed == true) {          
+		        overlay.hide();
+		        trigger.removeClass('is-open');
+		        trigger.addClass('is-closed');
+		        isClosed = false;
+		      } else {   
+		        overlay.show();
+		        trigger.removeClass('is-closed');
+		        trigger.addClass('is-open');
+		        isClosed = true;
+		      }
+		  } 
+		});
+	</script>
+<!--MenuJQ 结束-->
+
+<!--JQ 结束-->
+
+
+
+</head>
+
+<body>
+<!--Navbar 开始-->
+<div class="navbar_bg">
+
+<div class="outline_1100px">
+<div style="width:100%;height:80px;float: left;">
+
+
+<a href="mobile_index.html"><img class="js_logo" src="images/js_logo.png" width="276" height="57" alt=""/></a>
+<img class="js_sub_logo" src="images/js_sub_logo.png" width="186" height="37" alt=""/>
+
+
+</div>
+</div>
+</div>
+<div style="width:100%;height:2px;float:left;background:#333333;"></div>
+<!--Navbar 结束-->
+
+<!--Slide bar 开始-->
+
+<!--汉堡条 开始-->
+       
+       
+<button id="slide_btn" type="button" class="hamburger is-closed animated fadeInLeft menu_btn" data-toggle="offcanvas">
+            <span class="hamb-top" style="background:#999999;"></span>
+            <span class="hamb-middle" style="background:#999999;"></span>
+            <span class="hamb-bottom" style="background:#999999;"></span>
+          </button>
+<!--汉堡条 结束-->
+
+<div id="slide_block" style="max-width:500px; width:100%;height:100%;float:left;background:#111722;opacity:0.95;display: none;z-index:23;position:fixed;right:0;top:0;">
+	<div style="width:100%;height:41px;float:left;margin-left:13%;margin-top:5%;background:url(images/slide_menu_logo.png) no-repeat;"></div>
+	<a style="text-decoration:none;" href="mobile_index.html"><div id="home" class="slide_bar_word" style="margin-top:25px;">首页</div></a>
+	<a style="text-decoration:none;" href="mobile_xzjs.html"><div id="zxjs" class="slide_bar_word" >选择嘉盛</div></a>
+	<a style="text-decoration:none;" href="#"><div id="zjxs" class="slide_bar_word" >财经资讯</div></a>
+	<a style="text-decoration:none;" href="#"><div id="jycp" class="slide_bar_word" >交易产品</div></a>
+	<a style="text-decoration:none;" href="#"><div id="jyzn" class="slide_bar_word" >交易指南</div></a>
+	<a style="text-decoration:none;" href="#"><div id="tzxt" class="slide_bar_word" >投资学堂</div></a>
+	<a style="text-decoration:none;" href="#"><div id="dlhz" class="slide_bar_word" >代理合作</div></a>
+	
+	<!--安卓客户端 开始-->
+	<a href="#">
+	<img style="width:35%;height:auto;max-width:244px; float:left;margin-left:35%;" src="images/slide_menu_android.png" width="244" height="76" alt=""/>
+	</a>
+	<!--安卓客户端 结束-->
+	
+	<!--IOS客户端 开始-->
+	<a href="#">
+	<img style="width:35%;height:auto;max-width:244px; float:left;margin-left:35%;margin-top:7px;margin-bottom:10px;" src="images/slide_menu_ios.png" width="244" height="76" alt=""/> </a>
+	<!--IOS客户端 结束-->
+</div>
+<!--Slide bar 结束-->
+
+
+<!--Block 開始-->
+
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:80px;">	
+		</div>
+	</div>
+
+<!--Block 結束-->
+
+
+
+<!--Outside 开始-->
+<div class="outside">
+<div class="outside_bg">
+<div class="outline_1100px">
+
+
+
+
+
+<!--Banner 开始-->
+<div class="Banner_out">
+ <!-- Banner Slide內容 开始-->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators" style="z-index:1;">
+    <li data-target="#carousel-example-generic" data-slide-to="0"  class="active" ></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Banner更换 开始 -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active left" alt="1">
+    	<img style="width:100%;height:auto;max-width:1100px; float:left;background:url(images/banner_04.png) repeat-x;object-fit: cover;" src="images/banner_01.png" width="640" height="214" alt=""/> </div>
+    
+    <div class="item next left" alt="2">
+    	<img style="width:100%;height:auto;max-width:1100px; float:left;background:url(images/banner_04.png) repeat-x;" src="images/banner_02.png" width="640" height="214" alt=""/> </div>
+    
+    <div class="item next left" alt="3">
+    	<img style="width:100%;height:auto;max-width:1100px; float:left;background:url(images/banner_04.png) repeat-x;object-fit: cover;" src="images/banner_03.png" width="640" height="214" alt=""/>    </div>
+    
+    <div class="item next left" alt="4">
+    	<img style="width:100%;height:auto;max-width:1100px; float:left;background:url(images/banner_04.png) repeat-x;object-fit: cover;" src="images/banner_04.png" width="640" height="214" alt=""/> </div>
+  </div>
+ <!-- Banner更换 结束 -->
+
+  <!--Btn按钮 开始-->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    	<div class="Banner_btn" style="float:left;margin-left:10%">
+    	<img src="images/slide_banner_arrow_left.png" width="23" height="37" alt=""/>
+    	</div>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+  		<div class="Banner_btn" style="float:right;margin-right:10%">
+  			<img src="images/slide_banner_arrow_right.png" width="23" height="37" alt=""/>
+  		</div>
+  </a>
+ <!--Btn按钮 结束-->
+</div>
+<!-- Banner Slide內容 结束-->
+</div>
+<!--Banner 结束-->
+
+<!--股票指数 开始-->
+	<!--第一层 开始-->
+	<div class="stock_sign_number_bg_first">
+	<!--上征指数 开始-->
+	<div class="stock_sign_number_tittle" style="margin-left:1%;">
+	<div style="width:auto;height:auto;float:left;margin-top:25px;">上征指数</div>
+	</div>
+		<div class="stock_sign_number_detail_out">
+	
+		<div class="stock_sign_number_detail">3152.15</div>
+		<div class="stock_sign_number_count_square">
+		<div class="stock_sign_number_count" style="color:#129c00;">-1.39%</div>
+		</div>
+	
+		</div>
+	<!--上征指数 结束-->
+		
+		<!--深证指数 开始-->
+	<div class="stock_sign_number_tittle" style="margin-left:14%;">
+	<div style="width:auto;height:auto;float:left;margin-top:25px;">深证指数</div>
+	</div>
+		<div class="stock_sign_number_detail_out">
+	
+		<div class="stock_sign_number_detail">10259.17</div>
+		<div class="stock_sign_number_count_square" style="margin-left:12px;">
+		<div class="stock_sign_number_count" style="color:#129c00;">-1.46%</div>
+		</div>
+	
+		</div>
+	<!--深证指数 结束-->
+		
+	</div>
+	<!--第一层 结束-->
+<div class="stock_sign_trapezoid"></div>
+	<!--第二层 开始-->
+	<div class="stock_sign_number_bg_second">
+	
+	
+	<!--创业指数 开始-->
+	<div style="width:auto;height:auto;float:right;margin-right:5%;position: relative;margin-left:5%;">
+	<div class="stock_sign_number_tittle">
+	<div style="width:auto;height:auto;float:left;margin-top:25px;">创业指数</div>
+	</div>
+		<div class="stock_sign_number_detail_out">
+	
+		<div class="stock_sign_number_detail">1822.62</div>
+		<div class="stock_sign_number_count_square">
+		<div class="stock_sign_number_count" style="color:red;">0.38%</div>
+		</div>
+	
+		</div>
+	<!--创业指数 结束-->
+		
+		<!--深证指数 开始-->
+	<div class="stock_sign_number_tittle" style="margin-left:45px;">
+	<div style="width:auto;height:auto;float:left;margin-top:25px;">沪深300</div>
+	</div>
+		<div class="stock_sign_number_detail_out">
+	
+		<div class="stock_sign_number_detail">3425.23</div>
+		<div class="stock_sign_number_count_square" >
+		<div class="stock_sign_number_count" style="color:#129c00;">-1.08%</div>
+		</div>
+	
+		</div>
+	<!--深证指数 结束-->
+	</div>	
+	</div>
+	<!--第二层 结束-->
+<!--股票指数 结束-->
+
+
+<!--开户 开始-->
+<div class="signup_btn_out">
+
+<a href="#"><div class="signup_btn_bg_real">
+	<div class="signup_btn_word">开立真实账户</div>
+</div>
+</a>
+
+<a href="#">
+<div class="signup_btn_bg_faked">
+	<div class="signup_btn_word">开立虚拟账户</div>
+</div>
+</a>
+</div>
+<!--开户 结束-->
+
+<!--分隔线 开始-->
+<div class="separated_line"></div>
+<!--分隔线 结束-->
+
+<!--头条公告 开始-->
+
+	<!--Tittle 开始-->
+	<div style="width:100%;height:auto;float:left;">
+		<div id="jrtt_btn" class="announced_tittle_choose">今日头条</div>
+		<div id="dpfx_btn" class="announced_tittle">大盘分析</div>
+		<div id="gpzx_btn" class="announced_tittle">股票资讯</div>
+		<div id="jsgd_btn" class="announced_tittle">嘉盛观点</div>
+	</div>
+	
+	
+	<!--Tittle 结束-->
+	
+	
+	<div style="width:100%;height:auto;float:left;">
+	<!--Jrtt_Detail01 开始-->
+	<div id="jrtt_detail_page01" class="announced_detail_bg" >
+		<div class="announced_detail_out">
+			<a href="#"><div class="announced_detail_word">高层对金融稳定定调增多 总理发话维护...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">保监会连连出招 保险市场将从快向稳转...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">“一带一路”板块调整渐进尾声？券商因这...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">一行三会集体发声：全方位支持“一带...</div></a>
+		<div class="announced_detail_word_line"></div>
+		</div>
+		
+		<!--jrtt页码 开始-->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="float:right;height:22px;margin-right:10px;margin-bottom:10px;">
+						<div id="jrtt_page01_icon_page02" class="paging_detail_zxgg_block" style="cursor: pointer;">02</div>
+						<div id="jrtt_page01_icon_page01" class="paging_detail_zxgg_block" style="background:#a9a9a9;border-color:#333333;cursor:pointer;">01</div>
+					</div>
+				</div>
+			</div>
+			<!--jrtt页码 结束-->
+	</div>
+	<!--Jrtt_Detail01 结束-->
+	
+	<!--Jrtt_Detail02 开始-->
+	<div id="jrtt_detail_page02" class="announced_detail_bg" style="display:none;" >
+		<div class="announced_detail_out">
+			<a href="#"><div class="announced_detail_word">大盘一路走低 沪指跌逾1%跌穿半年线...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">方星海 : 表示以市场需求为导向 推出更...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">民生银行80后女行长伪造30亿“假理...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">蚂蚁金服与东南亚支付平台HelloPay...</div></a>
+		<div class="announced_detail_word_line"></div>
+		</div>
+		
+		<!--jrtt页码 开始-->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="float:right;height:22px;margin-right:10px;margin-bottom:10px;">
+						<div id="jrtt_page02_icon_page02" class="paging_detail_zxgg_block" style="background:#a9a9a9;cursor: pointer;">02</div>
+						<div id="jrtt_page02_icon_page01" class="paging_detail_zxgg_block" style="cursor:pointer;">01</div>
+					</div>
+				</div>
+			</div>
+			<!--jrtt页码 结束-->
+	</div>
+	<!--Jrtt_Detail02 结束-->
+	
+	<!--dpfx_Detail01 开始-->
+	<div id="dpfx_detail_page01" class="announced_detail_bg" style="display:none;">
+		<div class="announced_detail_out">
+			<a href="#"><div class="announced_detail_word">惊心动魄一周终过去 五机构看后市：还差...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">因这一消息电力股集体上涨？ 煤价持续下...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">中国拥有全球最抢手的房地产股票 前十中...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">方星海 : 有信心2017年推出石油期货...</div></a>
+		<div class="announced_detail_word_line"></div>
+		</div>
+		
+		<!--dpfx页码 开始-->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="float:right;height:22px;margin-right:10px;margin-bottom:10px;">
+						<div id="dpfx_page01_icon_page02" class="paging_detail_zxgg_block" style="cursor: pointer;">02</div>
+						<div id="dpfx_page01_icon_page01" class="paging_detail_zxgg_block" style="background:#a9a9a9;border-color:#333333;cursor:pointer;">01</div>
+					</div>
+				</div>
+			</div>
+			<!--dpfx页码 结束-->
+	</div>
+	<!--dpfx_Detail01 结束-->
+	
+	<!--dpfx_Detail02 开始-->
+	<div id="dpfx_detail_page02" class="announced_detail_bg" style="display:none;">
+		<div class="announced_detail_out">
+			<a href="#"><div class="announced_detail_word">中国拥有全球最抢手的房地产股...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">黄金空头蠢蠢欲动 聚焦今晚两大重磅事...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">方星海 : 有信心2017年推出石油期货...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">沪指收盘跌近1%遭遇四连阴 3个月来首...</div></a>
+		<div class="announced_detail_word_line"></div>
+		</div>
+		
+		<!--dpfx页码 开始-->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="float:right;height:22px;margin-right:10px;margin-bottom:10px;">
+						<div id="dpfx_page02_icon_page02" class="paging_detail_zxgg_block" style="background:#a9a9a9;cursor: pointer;">02</div>
+						<div id="dpfx_page02_icon_page01" class="paging_detail_zxgg_block" style="cursor:pointer;">01</div>
+					</div>
+				</div>
+			</div>
+			<!--dpfx页码 结束-->
+	</div>
+	<!--dpfx_Detail02 结束-->
+	
+	<!--gpzx_Detail01 开始-->
+	<div id="gpzx_detail_page01" class="announced_detail_bg" style="display:none;">
+		<div class="announced_detail_out">
+			<a href="#"><div class="announced_detail_word">股市探底机构调研：星石投资博时基金...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">C919大型客机通过首飞评审 产业链...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">“一带一路”高峰论坛即将开幕 关注投...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">10公司最新股东户数下降逾五成...</div></a>
+		<div class="announced_detail_word_line"></div>
+		</div>
+		
+		<!--gpzx页码 开始-->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="float:right;height:22px;margin-right:10px;margin-bottom:10px;">
+						<div id="gpzx_page01_icon_page02" class="paging_detail_zxgg_block" style="cursor: pointer;">02</div>
+						<div id="gpzx_page01_icon_page01" class="paging_detail_zxgg_block" style="background:#a9a9a9;border-color:#333333;cursor:pointer;">01</div>
+					</div>
+				</div>
+			</div>
+			<!--gpzx页码 结束-->
+	</div>
+	<!--gpzx_Detail01 结束-->
+	
+	<!--gpzx_Detail02 开始-->
+	<div id="gpzx_detail_page02" class="announced_detail_bg" style="display:none;">
+		<div class="announced_detail_out">
+			<a href="#"><div class="announced_detail_word">油气改革方案望近期出台 油改概念迎...</div></a>
+		<div class="announced_detail_word_line"></div>
+		</div>
+		
+		<!--gpzx页码 开始-->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="float:right;height:22px;margin-right:10px;margin-bottom:10px;">
+						<div id="gpzx_page02_icon_page02" class="paging_detail_zxgg_block" style="background:#a9a9a9;cursor: pointer;">02</div>
+						<div id="gpzx_page02_icon_page01" class="paging_detail_zxgg_block" style="cursor:pointer;">01</div>
+					</div>
+				</div>
+			</div>
+			<!--gpzx页码 结束-->
+	</div>
+	<!--gpzx_Detail02 结束-->
+	
+	
+	<!--jsgd_Detail 开始-->
+	<div id="jsgd_detail_page01" class="announced_detail_bg" style="display:none;">
+	
+		<div class="announced_detail_out">
+			<a href="#"><div class="announced_detail_word">沪指V形反转即将变盘？业内人士抛出八...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">盐业体制改革细则发布 相关个股或直接...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">雄安概念股退潮 龙头股多数下挫...</div></a>
+		<div class="announced_detail_word_line"></div>
+		</div>
+		
+		<!--jsgd页码 开始-->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="float:right;height:22px;margin-right:10px;margin-bottom:10px;">
+						<div id="jsgd_page01_icon_page01" class="paging_detail_zxgg_block" style="background:#a9a9a9;border-color:#333333;cursor:pointer;">01</div>
+					</div>
+				</div>
+			</div>
+			<!--jsgd页码 结束-->
+	</div>
+	<!--jsgd_Detail 结束-->
+	</div>
+<!--头条公告 结束-->
+
+<!--嘉盛优势 开始-->
+<div class="advantage_bg">
+  <img style="width:90%;height:auto;max-width:532px;float:left;margin-left:5%;margin-top:10px;margin-bottom:5%;" src="images/advantage_whole.jpg" width="532" height="359" alt=""/>
+  </div>
+<!--嘉盛优势 结束-->
+
+<!--分隔线 开始-->
+<div class="separated_line" style="margin-top:5%;"></div>
+<!--分隔线 结束-->
+
+<!--公司公告 开始-->
+	<!--Tittle 开始-->
+	<div style="width:100%;height:auto;float:left;">
+		<div id="zxgg_btn" class="announced_tittle_choose">最新公告</div>
+		<div id="zxhd_btn" class="announced_tittle">最新活动</div>
+		<div id="jsbd_btn" class="announced_tittle">嘉盛报道</div>
+		<div id="tzxt_btn" class="announced_tittle">投资学堂</div>
+	</div>
+	<!--Tittle 结束-->
+	
+	
+	<div style="width:100%;height:auto;float:left;margin-bottom:95px;">
+	<!--zxgg_Detail01 开始-->
+	<div id="zxgg_detail_page01" class="announced_detail_bg" >
+		<div class="announced_detail_out">
+			<a href="#"><div class="announced_detail_word">5/13(六)、5/14(日) 周末休市通知...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">嘉盛投资端午节休市通知...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">嘉盛投资劳动节休市通知...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">嘉盛投资清明节休市通知...</div></a>
+		<div class="announced_detail_word_line"></div>
+			
+		</div>
+		
+		<!--zxgg页码 开始-->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="float:right;height:22px;margin-right:10px;margin-bottom:10px;">
+						<div id="zxgg_page01_icon_page02" class="paging_detail_zxgg_block" style="cursor: pointer;">02</div>
+						<div id="zxgg_page01_icon_page01" class="paging_detail_zxgg_block" style="background:#a9a9a9;border-color:#333333;cursor:pointer;">01</div>
+					</div>
+				</div>
+			</div>
+			<!--zxgg页码 结束-->
+	</div>
+	<!--zxgg_Detail01 结束-->
+	
+	<!--zxgg_Detail02 开始-->
+	<div id="zxgg_detail_page02" class="announced_detail_bg" style="display:none;" >
+		<div class="announced_detail_out">
+			<a href="#"><div class="announced_detail_word">嘉盛投资春节休市通知...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">嘉盛投资元旦休市通知...</div></a>
+		<div class="announced_detail_word_line"></div>
+		</div>
+		
+		<!--zxgg页码 开始-->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="float:right;height:22px;margin-right:10px;margin-bottom:10px;">
+						<div id="zxgg_page02_icon_page02" class="paging_detail_zxgg_block" style="background:#a9a9a9;cursor: pointer;">02</div>
+						<div id="zxgg_page02_icon_page01" class="paging_detail_zxgg_block" style="cursor:pointer;">01</div>
+					</div>
+				</div>
+			</div>
+			<!--zxgg页码 结束-->
+	</div>
+	<!--zxgg_Detail02 结束-->
+	
+	<!--zxhd_Detail 开始-->
+	<div id="zxhd_detail_page01" class="announced_detail_bg" style="display:none;">
+		<div class="announced_detail_out">
+			<a href="#"><div class="announced_detail_word">3周年活动 首冲多少送多少 最高享...</div></a>
+		<div class="announced_detail_word_line"></div>
+		</div>
+		
+		<!--zxhd页码 开始-->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="float:right;height:22px;margin-right:10px;margin-bottom:10px;">
+						<div id="zxhd_page01_icon_page01" class="paging_detail_zxgg_block" style="background:#a9a9a9;border-color:#333333;cursor:pointer;">01</div>
+					</div>
+				</div>
+			</div>
+			<!--zxhd页码 结束-->
+	</div>
+	<!--zxhd_Detail 结束-->
+	
+	
+	<!--jsbd_Detail 开始-->
+	<div id="jsbd_detail_page01" class="announced_detail_bg" style="display:none;">
+		<div class="announced_detail_out">
+			<a href="#"><div class="announced_detail_word">嘉盛投资JT8产品详解...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">想投资选择嘉盛JT8交易平台...</div></a>
+		<div class="announced_detail_word_line"></div>
+		</div>
+		
+		<!--zxbd页码 开始-->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="float:right;height:22px;margin-right:10px;margin-bottom:10px;">
+						<div id="zxbd_page01_icon_page01" class="paging_detail_zxgg_block" style="background:#a9a9a9;border-color:#333333;cursor:pointer;">01</div>
+					</div>
+				</div>
+			</div>
+			<!--zxbd页码 结束-->
+	</div>
+	<!--jsbd_Detail 结束-->
+	
+	
+	<!--tzxt_Detail 开始-->
+	<div id="tzxt_detail_page01" class="announced_detail_bg" style="display:none;">
+		<div class="announced_detail_out">
+			<a href="#"><div class="announced_detail_word">深度解析T+0操作技巧...</div></a>
+		<div class="announced_detail_word_line"></div>
+			<a href="#"><div class="announced_detail_word">股票炒短线 盈利大好几倍...</div></a>
+		<div class="announced_detail_word_line"></div>
+		</div>
+		
+		<!--tzxt页码 开始-->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="float:right;height:22px;margin-right:10px;margin-bottom:10px;">
+						<div id="tzxt_page01_icon_page01" class="paging_detail_zxgg_block" style="background:#a9a9a9;border-color:#333333;cursor:pointer;">01</div>
+					</div>
+				</div>
+			</div>
+			<!--tzxt页码 结束-->
+	</div>
+	<!--tzxt_Detail 结束-->
+	</div>
+<!--公司公告 结束-->
+
+</div>
+</div>
+</div>
+<!--Outside 结束-->
+
+<!--浮动 开始-->
+<div class="fix_bar_bg">
+	
+	<div class="outline_1100px">
+	<div class="row">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:40px;">
+
+	<!--在线客服 开始-->
+	<a href="http://www11.53kf.com/webCompany.php?style=1&arg=10146968" style="">
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="border-right:1pt solid #848586;height:40px;">
+		<div class="fix_bar_area">
+		<img src="images/fix_service.png" style="max-width:29px;height:auto;margin-left:10px;float:left;position:relative;transform:translateY(-50%);top:50%;" width="49" height="47" alt=""/>
+		<div class="fix_bar_word " style="color:white;">在线客服</div>
+		</div>
+	</div>
+	</a>
+	<!--在线客服 结束-->
+	
+
+	<!--QQ客服 开始-->
+	<a href="#" >
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="border-right:1pt solid #848586;height:40px;">
+		<img src="images/fix_qq.png" style="max-width:27px;height:auto;margin-left:10px;float:left;position:relative;transform:translateY(-50%);top:50%;" width="45" height="48" alt=""/>
+		<div class="fix_bar_word" style="color:white;">QQ客服</div>
+	</div>
+	</a>
+	<!--QQ客服 结束-->
+
+	
+	<!--客户端 开始-->
+	<a href="#" >
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="height:40px;">
+		<img src="images/fix_phone.png" style="max-width:19px;height:auto;margin-left:10px;float:left;position:relative;transform:translateY(-50%);top:50%;" width="32" height="48" alt=""/>
+		<div class="fix_bar_word" style="color:white;">客户端下载</div>
+	</div>
+	</a>
+	<!--客户端 结束-->
+	
+</div>
+</div>
+</div>
+</div>
+<!--浮动 结束-->
+
+</body>
+</html>
