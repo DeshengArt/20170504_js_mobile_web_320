@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2.0" />
+<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+<title>嘉盛投资</title>
+
+<!--css 开始-->
+<link href="css/mobile_style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/style.css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<!--css 结束-->
+
+<!--JQ 开始-->
+<script src="js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+	
+/*页码JQ 开始*/
+$(document).ready(function(){
+	
+	
+  $("#zxgg_page01_icon").click(function(){
+  $("#zxgg_page01").show();
+	  
+	  $("#zxgg_page01_icon").css("background","#a9a9a9");
+	  
+	  $("#zxgg_page02").hide();
+	  $("#zxgg_page03").hide();
+	  
+	  
+  });
+	
+	
+	$("#zxgg_page02_icon").click(function(){
+  $("#zxgg_page02").show();
+  
+	  
+	  $("#zxgg_page04_icon").css("background","#a9a9a9");
+	  $("#zxgg_page03_icon").css("background","#ebebeb");
+	  
+	  $("#zxgg_page01").hide();
+	  $("#zxgg_page03").hide();
+	  
+	  
+  });
+	
+	$("#zxgg_page03_icon").click(function(){
+  $("#zxgg_page01").show();
+  
+	  
+	  $("#zxgg_page01_icon").css("background","#a9a9a9");
+	  
+	  $("#zxgg_page02").hide();
+	  $("#zxgg_page03").hide();	  
+  });
+  
+});	
+/*页码JQ 结束*/	
+	
+</script>
+
+
+
+
+<!--下滑JQ 开始-->
+	<script type="text/javascript">
+		$(document).ready(function(){
+				$('#jsjj_btn').click(function(){ $('html,body').animate({scrollTop:$('#jsjj_block').offset().top}, 500); }); 
+			$('#jsyx_btn').click(function(){ $('html,body').animate({scrollTop:$('#jsyx_block').offset().top}, 500); });
+			$('#jsgg_btn').click(function(){ $('html,body').animate({scrollTop:$('#jsgg_block').offset().top}, 500); });
+			$('#jshd_btn').click(function(){ $('html,body').animate({scrollTop:$('#jshd_block').offset().top}, 500); });
+			$('#jsbd_btn').click(function(){ $('html,body').animate({scrollTop:$('#jsbd_block').offset().top}, 500); });
+		});
+		</script>
+<!--下滑JQ 结束->
+
+<!--MenuJQ 开始-->
+<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+		  var trigger = $('.hamburger'),
+		      overlay = $('.overlay'),
+		     isClosed = false;
+
+		    trigger.click(function () {
+		      hamburger_cross();      
+		    });
+
+		    function hamburger_cross() {
+
+		      if (isClosed == true) {          
+		        overlay.hide();
+		        trigger.removeClass('is-open');
+		        trigger.addClass('is-closed');
+		        isClosed = false;
+		      } else {   
+		        overlay.show();
+		        trigger.removeClass('is-closed');
+		        trigger.addClass('is-open');
+		        isClosed = true;
+		      }
+		  } 
+		});
+		
+		
+		$(document).ready(function(){
+  $("#jsjj_more").click(function(){
+  $("#jsjj_word").slideToggle();
+  $("#jsjj_etc").toggle();
+  });
+});
+		
+		$(document).ready(function(){
+  $("#jsyx_more").click(function(){
+  $("#jsyx_word").slideToggle();
+  });
+});
+		
+/*SlideBar_JQ 开始*/
+$(document).ready(function(){
+  $("#slide_btn").click(function(){
+  $("#slide_block").slideToggle();
+  });
+});
+/*SlideBar_JQ 结束*/
+	</script>
+<!--MenuJQ 结束-->
+
+<!--JQ 结束-->
+
+
+
+</head>
+
+<body>
+<!--Navbar 开始-->
+<div class="navbar_bg">
+
+<div class="outline_1100px">
+<div style="width:100%;height:80px;float: left;">
+
+
+<a href="mobile_index.html"><img class="js_logo" src="images/js_logo.png" width="276" height="57" alt=""/></a>
+<img class="js_sub_logo" src="images/js_sub_logo.png" width="186" height="37" alt=""/>
+
+
+</div>
+</div>
+</div>
+<div style="width:100%;height:2px;float:left;background:#333333;"></div>
+<!--Navbar 结束-->
+
+<!--Slide bar 开始-->
+
+<!--汉堡条 开始-->     
+<button id="slide_btn" type="button" class="hamburger is-closed animated fadeInLeft menu_btn" data-toggle="offcanvas">
+            <span class="hamb-top" style="background:#999999;"></span>
+            <span class="hamb-middle" style="background:#999999;"></span>
+            <span class="hamb-bottom" style="background:#999999;"></span>
+          </button>
+<!--汉堡条 结束-->
+
+<div id="slide_block" style="max-width:500px; width:100%;height:100%;float:left;background:#111722;opacity:0.95;display: none;z-index:23;position:fixed;right:0;top:0;">
+	<div style="width:100%;height:41px;float:left;margin-left:13%;margin-top:5%;background:url(images/slide_menu_logo.png) no-repeat;"></div>
+	<a style="text-decoration:none;" href="mobile_index.html"><div id="home" class="slide_bar_word" style="margin-top:25px;">首页</div></a>
+	<a style="text-decoration:none;" href="mobile_xzjs.html"><div id="zxjs" class="slide_bar_word" >选择嘉盛</div></a>
+	<a style="text-decoration:none;" href="#"><div id="zjxs" class="slide_bar_word" >财经资讯</div></a>
+	<a style="text-decoration:none;" href="#"><div id="jycp" class="slide_bar_word" >交易产品</div></a>
+	<a style="text-decoration:none;" href="#"><div id="jyzn" class="slide_bar_word" >交易指南</div></a>
+	<a style="text-decoration:none;" href="#"><div id="tzxt" class="slide_bar_word" >投资学堂</div></a>
+	<a style="text-decoration:none;" href="#"><div id="dlhz" class="slide_bar_word" >代理合作</div></a>
+	
+	<!--安卓客户端 开始-->
+	<a href="#">
+	<img style="width:35%;height:auto;max-width:244px; float:left;margin-left:35%;" src="images/slide_menu_android.png" width="244" height="76" alt=""/>
+	</a>
+	<!--安卓客户端 结束-->
+	
+	<!--IOS客户端 开始-->
+	<a href="#">
+	<img style="width:35%;height:auto;max-width:244px; float:left;margin-left:35%;margin-top:7px;margin-bottom:10px;" src="images/slide_menu_ios.png" width="244" height="76" alt=""/> </a>
+	<!--IOS客户端 结束-->
+</div>
+<!--Slide bar 结束-->
+
+
+
+<!--Outside 开始-->
+<div class="outside">
+<div class="outline_1100px">
+
+<!--Block 開始-->
+
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:80px;">	
+		</div>
+	</div>
+
+<!--Block 結束-->
+
+
+
+<!--MiddleBar开始-->
+<div class="row">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paging_middle_bg" >
+		<a href="javascript:window.history.back();">
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 paging_middle_icon" style="margin-left:3%;"><img src="images/xzjs/pre_page_btn.png" alt=""/></div>
+		</a>
+		
+		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+		
+		<!--Tittle 开始-->
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 paging_middle_tittle">
+		<div style="width:2px;height:20px;float:left;background:#045ce0;margin-top:8px;margin-right:4%;"></div>
+		<h4 style="font-family:微软雅黑;letter-spacing:3px;color:#333333;float:left;">最新公告</h4>
+		<div style="width:2px;height:20px;float:left;background:#045ce0;margin-top:8px;margin-left:2%;"></div>
+		</div>
+		<!--Tittle 结束-->
+		
+		
+		
+		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+		<a href="#">
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 paging_middle_icon" style="margin-right:1%;"><img src="images/xzjs/home_page_btn.png" alt=""/></div>
+		</a>
+		
+		
+	</div>
+</div>
+<!--MiddleBar结束-->
+
+<!--分隔线 开始-->
+
+<div class="row">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+	  <img src="images/separated_line.png" alt=""/> </div>
+</div>
+<!--分隔线 结束-->
+
+<!--中间内容 开始-->
+<div class="paging_detail_out">
+
+	<!--嘉盛简介 开始-->
+	<div id="jsjj_block" class="row">
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+			<div class="paging_detail_tittle_bar"></div>
+		</div>
+		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 paging_detail_tittle_word">
+			<h5>嘉盛简介</h5>
+		</div>
+	</div>
+	
+	
+	<!--Detail 开始-->
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paging_detail_word_bar"></div>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:auto;background:#ffffff;padding:5px 12px;">
+		
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<h4 class="paging_detail_word" style="line-height:25px;">
+				嘉盛投资休市通知:<br>5月13日 （星期六） ~14日 （星期日） 为周末休市；5月15号（星期一）恢复交易，祝广大投资者周末快乐！
+			</h4>
+		</div>
+
+		</div>
+	</div>
+	<!--Detail 结束-->
+	</div>
+	<!--嘉盛简介 结束-->
+</div>
+<!--中间内容 结束-->
+
+</div>
+</div>
+<!--Outside 结束-->
+
+
+<!--底部Block 開始-->
+
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:60px;">	
+		</div>
+	</div>
+
+<!--底部Block 結束-->
+
+
+
+<!--浮动 开始-->
+<div class="fix_bar_bg">
+	
+	<div class="outline_1100px">
+	<div class="row">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:40px;">
+
+	<!--在线客服 开始-->
+	<a href="http://www11.53kf.com/webCompany.php?style=1&arg=10146968" style="">
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="border-right:1pt solid #848586;height:40px;">
+		<div class="fix_bar_area">
+		<img src="images/fix_service.png" style="max-width:29px;height:auto;margin-left:10px;float:left;position:relative;transform:translateY(-50%);top:50%;" width="49" height="47" alt=""/>
+		<div class="fix_bar_word " style="color:white;">在线客服</div>
+		</div>
+	</div>
+	</a>
+	<!--在线客服 结束-->
+	
+
+	<!--QQ客服 开始-->
+	<a href="#" >
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="border-right:1pt solid #848586;height:40px;">
+		<img src="images/fix_qq.png" style="max-width:27px;height:auto;margin-left:10px;float:left;position:relative;transform:translateY(-50%);top:50%;" width="45" height="48" alt=""/>
+		<div class="fix_bar_word" style="color:white;">QQ客服</div>
+	</div>
+	</a>
+	<!--QQ客服 结束-->
+
+	
+	<!--客户端 开始-->
+	<a href="#" >
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="height:40px;">
+		<img src="images/fix_phone.png" style="max-width:19px;height:auto;margin-left:10px;float:left;position:relative;transform:translateY(-50%);top:50%;" width="32" height="48" alt=""/>
+		<div class="fix_bar_word" style="color:white;">客户端下载</div>
+	</div>
+	</a>
+	<!--客户端 结束-->
+	
+</div>
+</div>
+</div>
+</div>
+<!--浮动 结束-->
+
+</body>
+</html>
